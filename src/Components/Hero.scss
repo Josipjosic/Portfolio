@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Italiana&family=Italianno&display=swap");
+
+$body-font: "Italiana", sans-serif;
+$spec-font: "Italianno", sans-serif;
+$body-font-color: #7c7979;
+$spec-font-color: #ffffff;
+$span-font-color: #c10232;
+$link-font-color: #edab0d;
+$background-img: url("./assets/Design-background.png");
+
+
+@keyframes link {
+  from {
+    color: $link-font-color;
+  }
+  to {
+    color: #ffffff;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes flick {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slideinP1 {
+  from {
+    margin-left: -100%;
+    width: 80%;
+    opacity: 0;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes slideinP2 {
+  from {
+    margin-left: -100%;
+    width: 80%;
+    opacity: 0;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes slideinT {
+  from {
+    margin-left: -100%;
+    width: 80%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.hero {
+  background-image: $background-img;
+  background-size: cover;
+  justify-content: center;
+  cursor: default;
+  .hero-content {
+    height: 100vh;
+    .hero-detail {
+      display: block;
+      margin-top: 250px;
+      p:first-child {
+        font-family: $body-font;
+        font-size: 24px;
+        color: $body-font-color;
+        text-align: right;
+        animation-duration: 2s;
+        animation-name: slideinP1;
+      }
+      p:nth-last-child(2) {
+        font-family: $body-font;
+        font-size: 24px;
+        color: $body-font-color;
+        text-align: right;
+        animation-duration: 4s;
+        animation-name: slideinP2;
+      }
+      a {
+        font-family: $body-font;
+        text-decoration: none;
+        color: $link-font-color;
+        display: block;
+        width: 155px;
+        font-size: 24px;
+        margin-top: 58px;
+        cursor: pointer;
+      }
+      a:hover {
+        animation: link 0.3s linear;
+        animation-fill-mode: forwards;
+      }
+      h3 {
+        font-family: $body-font;
+        color: $spec-font-color;
+        font-size: 48px;
+        text-align: right;
+        animation: slideinT 2s linear;
+        .hero-flick {
+          color: $span-font-color;
+          animation: flick 2s infinite;
+        }
+      }
+    }
+    .hero-title {
+      display: block;
+      h1 {
+        font-family: "Italianno", sans-serif;
+        color: #ffffff;
+        opacity: 0;
+        font-size: calc(15.525rem + 3.3vw);
+        animation: fade 3s infinite;
+        line-height: 66%;
+        margin-left: 179px;
+        padding-top: 230px;
+        font-weight: lighter;
+        transform: rotate(-14.69deg);
+      }
+    }
+  }
+}

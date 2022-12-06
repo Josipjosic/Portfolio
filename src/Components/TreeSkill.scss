@@ -1,0 +1,139 @@
+$background-img: url("./assets/BasicTree-background.png");
+$body-font-color: #7c7979;
+$spec-font-color: #ffffff;
+$body-font: "Italiana", sans-serif;
+$spec-font: "Italianno", sans-serif;
+
+@keyframes sizeP {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.3);
+    z-index: 2;
+  }
+}
+
+@keyframes jump {
+  from {
+    margin-top: 0%;
+  }
+  to {
+    margin-top: -5%;
+  }
+}
+
+.tree {
+  background-image: $background-img;
+  height: 100vh;
+  align-items: center;
+  .tree-title {
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 0px;
+
+    h3 {
+      margin: 0;
+      color: $spec-font-color;
+      font-size: 48px;
+      font-family: $body-font;
+    }
+    p {
+      color: $body-font-color;
+      font-size: 20px;
+      font-family: $body-font;
+    }
+  }
+  .tree-content {
+    position: relative;
+    margin-top: 110px;
+    h4 {
+      font-family: $body-font;
+      font-size: 40px;
+      color: $spec-font-color;
+      display: block;
+      margin-top: 0%;
+    }
+  }
+  .tree-techn {
+    text-align: center;
+    height: 650px;
+    background-color: #0000001a;
+    border: #7c7979;
+    border-radius: 20px;
+    h4 {
+      padding-top: 30px;
+    }
+    .img1,
+    .img2,
+    .img3,
+    .img4,
+    .img5,
+    .img6,
+    .img7,
+    .img8,
+    .img9 {
+      width: 75px;
+      width: 55px;
+      height: 55px;
+      left: 250px;
+      margin: 45px;
+    }
+    .img1:hover,
+    .img2:hover,
+    .img3:hover,
+    .img4:hover,
+    .img5:hover,
+    .img6:hover,
+    .img7:hover,
+    .img8:hover,
+    .img9:hover {
+      animation: sizeP 0.5s linear;
+      animation-fill-mode: forwards;
+      animation-iteration-count: 2;
+      animation-direction: alternate;
+    }
+  }
+  .tree-techn:hover {
+    animation: jump 0.5s linear;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+  }
+  .tree-contact {
+    text-align: center;
+    height: 650px;
+    background-color: #0000001a;
+    border: #7c7979;
+    border-radius: 20px;
+
+    h4 {
+      padding-top: 30px;
+    }
+    .img11,
+    .img12,
+    .img13,
+    .img14 {
+      bottom: 220px;
+      right: 250px;
+      width: 55px;
+      height: 55px;
+      margin: 55px;
+    }
+    .img11:hover,
+    .img12:hover,
+    .img13:hover,
+    .img14:hover {
+      animation: sizeP 0.5s linear;
+      animation-fill-mode: forwards;
+      animation-iteration-count: 2;
+      animation-direction: alternate;
+      cursor: pointer;
+    }
+  }
+  .tree-contact:hover {
+    animation: jump 0.5s linear;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+  }
+}
+

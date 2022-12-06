@@ -1,9 +1,14 @@
-import './App.css';
+import "./App.css";
+import About from "./Components/About";
+import Hero from "./Components/Hero";
+import TreeSkill from "./Components/TreeSkill";
 
 function App() {
   return (
     <div className="App">
-      Test
+      <Hero />
+      <About />
+      <TreeSkill />
     </div>
   );
 }
