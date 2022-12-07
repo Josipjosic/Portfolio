@@ -11,7 +11,7 @@ function Hero() {
       <div className="container ">
       <Sidebar />
       <div className="row mx-auto">
-        <div className="col-lg text-center text-sm-end py-md-5 px-md-5">
+        <div className="col-lg text-center text-lg-end py-md-5 px-md-5">
           <p className="fs-4 p1">Introduction</p>
           <h2 className="fs-2">Front-end web developer and digital designer<span className="hero-flick">.</span></h2>
           <p className="fs-4 p2">
