@@ -1,57 +1,30 @@
-@keyframes button {
-  from {
-    background-color: #ffffff;
-  }
-  to {
-    background-color: #c10232;
-  }
+@keyframes bounce2 {
+	0%, 20%, 50%, 80%, 100% {transform: translateX(0);}
+	40% {transform: translateX(-30px);}
+	60% {transform: translateX(-15px);}
 }
-
-@keyframes sidebar {
-  from {
-    margin-left: -100%;
-    width: 80%;
-    opacity: 0;
-  }
-
-  to {
-    margin-left: 0%;
-    opacity: 1;
-  }
-}
-
 
 .sidebar {
-  color: #ffffff;
-  background-color: #ffffff04;
-  width: 55px;
+  right: 6rem;
+  bottom: 3rem;
+  width: 3rem;
+  transform: rotate(-90deg);
   position: fixed;
-  left: 0;
-  display: block;
-  height: 100vh;
-  animation: sidebar 3s linear;
-  z-index: 2;
   .sidebar-content {
-    display: block;
-    margin-top: 380px;
-    margin-left: 10px;
-    font-size: 45px;
-    font-weight: bolder;
-    a {
-      text-decoration: none;
-      color: #ffffff;
-      display: block;
-      background-color: #ffffff;
-      margin-top: 15px;
-      border-radius: 20px;
-      width: 35px;
-      height: 10px;
-    }
-    a:hover {
-      display: block;
-      cursor: pointer;
-      animation: button 0.5s linear;
-      animation-fill-mode: forwards;
-    }
+    width: 5rem;
   }
+  a {
+    text-decoration: none;
+    border-radius: 20px;
+    color: #ffffff;
+    width: 35px;
+    height: 10px;
+  }
+  a:hover {
+    cursor: pointer;
+    color: #c10232;
+  }
+}
+.sidebar-content{
+  animation: bounce2 10s infinite;
 }

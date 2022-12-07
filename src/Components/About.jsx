@@ -9,10 +9,10 @@ function About() {
   return (
     <section className="about" id="about">
       <div className="container">
-      <div className="about-content row">
-        <div className="about-projects col-6">
-          <h4>Projects</h4>
-          <div className="about-sm-flex ">
+      <div className="row">
+        <div className="col-lg">
+          <h4 className="fs-2 text-center">Projects</h4>
+          <div className="projects text-center">
             <a
               href="https://github.com/Josipjosic/Gallery"
               target="_blank"
@@ -48,6 +48,7 @@ function About() {
             </a>
           </div>
           <a
+            className="link-tab text-lg-start text-center"
             href="https://github.com/Josipjosic"
             target="_blank"
             rel="noreferrer"
@@ -55,9 +56,9 @@ function About() {
             More <ArrowForwardIcon />
           </a>
         </div>
-        <div className="about-detail col-6">
-          <h3 className="about-text">About me</h3>
-          <p className="about-par1">
+        <div className="col ">
+          <h3 className="fs-2 text-center">About me</h3>
+          <p className="fs-4 text-lg-center ">
             Hello again! Thank you for visiting my page and I hope you enjoy it.
             As already told, I’m a frontend web developer and digital designer.
             I’m from Nasice and I’ 24. If you want to get in contact with me,
@@ -79,9 +80,9 @@ function About() {
             >
               GitHub
             </a>
-            ) Hope to hear from you.
+            ). Down below you can find some of the technologies I'm familiar with and worked with in the past.
           </p>
-          <p className="about-par2">
+          <p className="fs-5 text-center about-part-2">
             'For the things we have to learn before we can do them, we learn by
             doing them.' <br></br>
             <span>- Aristotle</span>

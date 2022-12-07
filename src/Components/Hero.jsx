@@ -8,20 +8,20 @@ function Hero() {
 
   return (
     <section className="hero" id="hero">
-      <div className="container">
+      <div className="container ">
       <Sidebar />
-      <div className="hero-content row">
-        <div className="hero-detail col">
-          <p>Introduction</p>
-          <h3>Front-end web developer and digital designer<span className="hero-flick">.</span></h3>
-          <p>
+      <div className="row mx-auto">
+        <div className="col-lg text-center text-sm-end py-md-5 px-md-5">
+          <p className="fs-4 p1">Introduction</p>
+          <h2 className="fs-2">Front-end web developer and digital designer<span className="hero-flick">.</span></h2>
+          <p className="fs-4 p2">
             Welcome to my portfolio page. Here you can learn more about me and
             my projects throught my journey to become a front-end web developer.
           </p>
-          <a href={myPDF}  download="CV_File.pdf">Download resume <DownloadIcon viewBox="14 -10 3 31"/></a>
+          <a href={myPDF} download="CV_File.pdf" className="link fs-5">Download resume <DownloadIcon viewBox="12 -10 5 25"/></a>
         </div>
-        <div className="hero-title col">
-          <h1 className="hero-name rfs-47">Josip <br></br> Josić</h1>
+        <div className="col-md text-center py-md-5 ">
+          <h1 className="title fs-1 mx-sm-5">Josip <br></br> Josić</h1>
         </div>
       </div>
       </div>

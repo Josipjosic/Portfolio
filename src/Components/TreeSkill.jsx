@@ -18,17 +18,17 @@ function TreeSkill() {
   return (
     <section className="tree" id="skills">
       <div className="container">
-        <div className="tree-title">
-          <h3>Tree of details</h3>
+        <div className="text-center">
+          <h3 className="fs-2">Tree of details</h3>
           <br></br>
-          <p>
+          <p className="fs-4 my-3">
             more about tools, technologies and social media I’m currently using
           </p>
         </div>
-        <div className="tree-content row justify-content-evenly">
-          <div className="tree-techn col-5">
-            <h4>Technologies</h4>
-            <div>
+        <div className="row text-center">
+          <div className="col my-5">
+            <h4 className="fs-2 card-title">Technologies</h4>
+            <div className="p-5 img-cont">
               <img src={react} alt="react-icon" className="img1"></img>
               <img src={figma} alt="figma-icon" className="img2"></img>
               <img src={firebase} alt="firebase-icon" className="img3"></img>
@@ -41,9 +41,9 @@ function TreeSkill() {
               <img src={wordpress} alt="wp-icon" className="img9"></img>
             </div>
           </div>
-          <div className="tree-contact col-5 ">
-            <h4>Contact</h4>
-            <div>
+          <div className="col my-5">
+            <h4 className="fs-2 card-title ">Contact</h4>
+            <div className="p-5 img-cont">
               <a
                 href="https://www.facebook.com/josic12"
                 target="_blank"

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Italiana&family=Italianno&display=swap");
+@import "node_modules/bootstrap/scss/bootstrap";
 
 $body-font: "Italiana", sans-serif;
 $spec-font: "Italianno", sans-serif;
@@ -7,6 +8,7 @@ $spec-font-color: #ffffff;
 $span-font-color: #c10232;
 $link-font-color: #edab0d;
 $background-img: url("./assets/Design-background.png");
+
 
 
 @keyframes link {
@@ -20,10 +22,16 @@ $background-img: url("./assets/Design-background.png");
 
 @keyframes fade {
   0% {
-    opacity: 1;
+    opacity: 0;
+  }
+  25%{
+    opacity: 0.4;
   }
   50% {
     opacity: 0.6;
+  }
+  75%{
+    opacity: 0.8;
   }
   100% {
     opacity: 1;
@@ -70,84 +78,98 @@ $background-img: url("./assets/Design-background.png");
   }
 }
 
-@keyframes slideinT {
-  from {
-    margin-left: -100%;
-    width: 80%;
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
 
 .hero {
   background-image: $background-img;
-  background-size: cover;
-  justify-content: center;
-  cursor: default;
-  .hero-content {
-    height: 100vh;
-    .hero-detail {
-      display: block;
-      margin-top: 250px;
-      p:first-child {
-        font-family: $body-font;
-        font-size: 24px;
-        color: $body-font-color;
-        text-align: right;
-        animation-duration: 2s;
-        animation-name: slideinP1;
-      }
-      p:nth-last-child(2) {
-        font-family: $body-font;
-        font-size: 24px;
-        color: $body-font-color;
-        text-align: right;
-        animation-duration: 4s;
-        animation-name: slideinP2;
-      }
-      a {
-        font-family: $body-font;
-        text-decoration: none;
-        color: $link-font-color;
-        display: block;
-        width: 155px;
-        font-size: 24px;
-        margin-top: 58px;
-        cursor: pointer;
-      }
-      a:hover {
-        animation: link 0.3s linear;
-        animation-fill-mode: forwards;
-      }
-      h3 {
-        font-family: $body-font;
-        color: $spec-font-color;
-        font-size: 48px;
-        text-align: right;
-        animation: slideinT 2s linear;
-        .hero-flick {
-          color: $span-font-color;
-          animation: flick 2s infinite;
-        }
-      }
-    }
-    .hero-title {
-      display: block;
-      h1 {
-        font-family: "Italianno", sans-serif;
-        color: #ffffff;
-        opacity: 0;
-        font-size: calc(15.525rem + 3.3vw);
-        animation: fade 3s infinite;
-        line-height: 66%;
-        margin-left: 179px;
-        padding-top: 230px;
-        font-weight: lighter;
-        transform: rotate(-14.69deg);
-      }
-    }
+  color:$spec-font-color;
+  font-family: $body-font;
+
+  .col-md p{
+    color: $body-font-color;
+  }
+  .hero-flick{
+    color: $span-font-color;
+    animation: flick 1s infinite;
+  }
+  .link {
+    display: flex;
+    justify-content: left;
+    color: $link-font-color;
+    text-decoration: none;
+    margin-top: 10rem;
+  }
+  .link:Hover {
+    animation: link 0.3s linear;
+    animation-fill-mode: forwards;
+  }
+
+  .title {
+    font-family: $spec-font;
+  }
+
+
+  .p1 {
+    animation: slideinP1 1s linear;
+  }
+  .p2 {
+    animation: slideinP2 2s linear;
+  }
+  .py-5 {
+    padding-top: 3rem!important;
+    padding-bottom: 3rem!important;
+  }
+  .py-sm-5{
+    padding-top: 17rem!important;
+    padding-bottom: 17rem!important;
+  }
+  .py-md-5{
+    padding-top: 17rem!important;
+    padding-bottom: 17rem!important;
+  }
+  .fs-2 {
+    font-size: 3rem!important;
+    animation: slideinT 1.5s linear;
+  }
+  .fs-4 {
+    color: $body-font-color;
+  }
+  .fs-5 {
+    font-size: 1.5rem!important;
+  }
+  .fs-1{
+    font-size: 16rem!important;
+  }
+  .title {
+    animation: fade 3s linear;
+    line-height: 66%;
+    transform: rotate(-25deg);
+
+  }
+}
+
+@media (max-width: 767px){
+  .hero .py-md-5{
+    padding-top: 2rem!important;
+    padding-bottom: 2rem!important;
+  }
+  .hero .link  {
+    margin-top: 2rem;
+    justify-content: center;
+  }
+  .hero .fs-1 {
+    font-size: 12rem!important;
+  }
+}
+@media (max-width: 991px){
+  .hero .py-md-5{
+    padding-top: 2rem!important;
+    padding-bottom: 2rem!important;
+  }
+  .hero .link  {
+    margin-top: 2rem;
+    justify-content: center;
+  }
+  .hero .fs-1 {
+    font-size: 12rem!important;
   }
 }
