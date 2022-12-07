@@ -61,17 +61,17 @@ $spec-font: "Italianno", sans-serif;
   .img7,
   .img8,
   .img9 {
-    width: 55px;
-    height: 55px;
-    margin: 2rem;
+    width: 3rem;
+    height: 3rem;
+    margin: 3rem;
   }
   .img11,
   .img12,
   .img13,
   .img14 {
-    width: 55px;
-    height: 55px;
-    margin: 2rem;
+    width: 3rem;
+    height: 3rem;
+    margin: 3rem;
   }
 
   .img11:hover,
@@ -100,7 +100,6 @@ $spec-font: "Italianno", sans-serif;
   }
   .fs-4 {
     color: $body-font-color;
-    line-height: 66%;
     font-family: $body-font;
   }
   .card-title {
@@ -112,37 +111,33 @@ $spec-font: "Italianno", sans-serif;
   }
 }
 
+@media (max-width: 600px) {
+  .text-center .fs-4 {
+    font-size: 1rem !important;
+    text-align: center;
+  }
+  .text-center .fs-2 {
+    font-size: 1.5rem !important;
+  }
+}
 @media (max-width: 992px) {
-  .fs-4 {
+  .tree .fs-4 {
     font-size: 2rem !important;
     padding: 0rem 5rem;
   }
-  .fs-2 {
+  .tree .fs-2 {
     font-size: 3rem !important;
     padding-top: 1rem;
   }
 }
-@media (max-width: 992px){
-  .fs-4{
-    font-size: 2rem!important;
-    padding: 0rem 5rem;
-  }
-  .fs-2{
-    font-size: 3rem!important;
-    padding-top: 1rem;
-  }
-}
 
-
-@media (max-width: 1188px){
-  .text-center .fs-4{
-    font-size: 1.5rem!important;
+@media (max-width: 1188px) {
+  .text-center .fs-4 {
+    font-size: 1.5rem !important;
     text-align: center;
   }
-  .text-center .fs-2{
-    font-size: 2rem!important;
+  .text-center .fs-2 {
+    font-size: 2rem !important;
     padding-top: 1rem;
   }
-
 }
-

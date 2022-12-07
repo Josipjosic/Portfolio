@@ -1,7 +1,8 @@
 {
-  "name": "portfolio",
-  "version": "0.1.0",
-  "private": true,
+"name": "hostinger-react",
+ "homepage": "http://thejjo.com",
+ "version": "1.0.0",
+ "description": "my react application",
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
