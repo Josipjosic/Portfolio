@@ -161,38 +161,28 @@ $background-img: url("./assets/Dev-background.png");
   color: $spec-font-color;
 }
 
-@media (max-width: 992px){
-  .about .fs-4{
-    font-size: 2rem!important;
-    padding: 0rem 5rem;
-  }
-  .about .fs-2{
-    font-size: 3rem!important;
-    padding-top: 1rem;
-  }
-}
 
 
-@media (max-width: 1188px){
+@media (max-width: 547px){
   .image-project1 {
-    width: 22rem;
-    height: 14rem;
+    width: 18rem;
+    height: 10rem;
     box-shadow: 10px 10px 10px rgba(51, 51, 51, 0.301);
     top: 6rem;
     right: 0;
   }
   .image-project2 {
-    width: 22rem;
-    height: 14rem;
+    width: 18rem;
+    height: 10rem;
     box-shadow: 10px 10px 10px rgba(51, 51, 51, 0.301);
-    top: 2rem;
+    top: 3.5rem;
     left: 0;
   }
   .image-project3 {
-    width: 22rem;
-    height: 14rem;
+    width: 18rem;
+    height: 10rem;
     box-shadow: 10px 10px 10px rgba(51, 51, 51, 0.301);
-    top: -3rem;
+    top: 2rem;
     right: 0;
   }
   .link-tab{
