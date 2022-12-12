@@ -1,4 +1,5 @@
 import React from "react";
+import { useInView } from 'react-intersection-observer';
 import "./About.scss";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import project1 from "./assets/Gallery.png";
@@ -6,12 +7,17 @@ import project2 from "./assets/MovieApp.png";
 import project3 from "./assets/TopPop.png";
 
 function About() {
+
+  const { ref: myRef, inView: myElementIsVisible } = useInView({triggerOnce: true});
+
+
+
   return (
-    <section className="about" id="about">
-      <div className="container">
+    <section className="about" id="about" ref={myRef} >
+    <div className="container">
       <div className="row">
         <div className="col-lg">
-          <h4 className="fs-2 text-center">Projects</h4>
+          <h4 className={`${"fs-2 text-center"} ${myElementIsVisible ? "about-animate" : ""}`}>Projects</h4>
           <div className="projects text-center">
             <a
               href="https://github.com/Josipjosic/Gallery"
@@ -57,11 +63,11 @@ function About() {
           </a>
         </div>
         <div className="col ">
-          <h3 className="fs-2 text-center">About me</h3>
+          <h3 className={`${"fs-2 text-center"} ${myElementIsVisible ? "about-animate" : ""}`}>About me</h3>
           <p className="fs-4 text-lg-center ">
-            Hello again! Thank you for visiting my page and I hope you enjoy it.
+            Hello again<span className="hero-flick">!</span> Thank you for visiting my page and I hope you enjoy it.
             As already told, I’m a frontend web developer and digital designer.
-            I’m from Nasice and I’ 24. If you want to get in contact with me,
+            I’m from Nasice and I’m 24. If you want to get in contact with me,
             please use some of my social media (
             <a
               href="https://www.linkedin.com/in/josip-josic-949198213/"
@@ -89,7 +95,7 @@ function About() {
           </p>
         </div>
       </div>
-      </div>
+      </div >
     </section>
   );
 }

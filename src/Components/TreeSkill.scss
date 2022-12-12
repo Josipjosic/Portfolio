@@ -1,7 +1,7 @@
 @import "node_modules/bootstrap/scss/bootstrap";
 
 $background-img: url("./assets/BasicTree-background.png");
-$body-font-color: #7c7979;
+$body-font-color: #bbbbbb;
 $spec-font-color: #ffffff;
 $body-font: "Italiana", sans-serif;
 $spec-font: "Italianno", sans-serif;
@@ -50,8 +50,6 @@ $spec-font: "Italianno", sans-serif;
 }
 
 .tree {
-  background-image: $background-img;
-  background-size: 100%;
   .img1,
   .img2,
   .img3,
@@ -98,15 +96,17 @@ $spec-font: "Italianno", sans-serif;
     color: $spec-font-color;
     font-family: $body-font;
   }
+  .fs-3 {
+    font-size: 2rem !important;
+    color: $spec-font-color;
+    font-family: $body-font;
+  }
   .fs-4 {
     color: $body-font-color;
     font-family: $body-font;
   }
-  .card-title {
-    padding-bottom: 5rem;
-  }
   .img-cont {
-    background-color: #0000001c;
+    background-color: #55555528;
     border-radius: 20px;
   }
 }
@@ -117,6 +117,12 @@ $spec-font: "Italianno", sans-serif;
     font-size: 2rem !important;
     padding: 0rem 5rem;
   }
+  .tree .fs-3 {
+    font-size: 1rem !important;
+    color: $spec-font-color;
+    font-family: $body-font;
+  }
+  
   .tree .fs-2 {
     font-size: 3rem !important;
     padding-top: 1rem;
@@ -131,5 +137,12 @@ $spec-font: "Italianno", sans-serif;
   .text-center .fs-2 {
     font-size: 2rem !important;
     padding-top: 1rem;
+  }
+  .about .fs-2 {
+    font-size: 2rem !important;
+    padding-top: 1rem;
+  }
+  .about .fs-4 {
+    font-size: 1.5rem !important;
   }
 }

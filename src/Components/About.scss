@@ -2,7 +2,7 @@
 
 $body-font: "Italiana", sans-serif;
 $spec-font: "Italianno", sans-serif;
-$body-font-color: #929292;
+$body-font-color: #bbbbbb;
 $spec-font-color: #ffffff;
 $span-font-color: #c10232;
 $link-font-color: #edab0d;
@@ -37,14 +37,37 @@ $background-img: url("./assets/Dev-background.png");
 }
 
 @keyframes gelatine {
-  from, to { transform: scale(1, 1); }
-  25% { transform: scale(0.9, 1.1); }
-  50% { transform: scale(1.1, 0.9); }
-  75% { transform: scale(0.95, 1.05); }
+  from,
+  to {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.05);
+  }
 }
 
+@keyframes slideUpP1 {
+  from {
+    margin-bottom: 100%;
+    width: 80%;
+    opacity: 0;
+  }
+
+  to {
+    margin-bottom: 0%;
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+
 .about {
-  background-image: $background-img;
   .fs-2 {
     font-size: 3rem !important;
     font-family: $body-font;
@@ -53,7 +76,7 @@ $background-img: url("./assets/Dev-background.png");
   .fs-4 {
     color: $body-font-color;
     font-family: $body-font;
-    font-size: 1.9rem!important;
+    font-size: 1.9rem !important;
     font-weight: bolder;
     padding-top: 5rem;
   }
@@ -74,9 +97,19 @@ $background-img: url("./assets/Dev-background.png");
     text-decoration: none;
   }
   .about-link:hover {
-  color: $spec-font-color;
+    color: $spec-font-color;
   }
-
+  @keyframes flick {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
 }
 .projects .link-tab {
   color: $link-font-color;
@@ -97,7 +130,6 @@ $background-img: url("./assets/Dev-background.png");
   padding-bottom: 17rem !important;
 }
 
-
 .fs-1 {
   font-size: 16rem !important;
 }
@@ -105,7 +137,7 @@ $background-img: url("./assets/Dev-background.png");
 .image-project1 {
   width: 22rem;
   height: 14rem;
-  box-shadow: 10px 10px 10px rgba(51, 51, 51, 0.301);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.301);
   position: relative;
   top: 6rem;
   right: 7rem;
@@ -113,7 +145,7 @@ $background-img: url("./assets/Dev-background.png");
 .image-project2 {
   width: 22rem;
   height: 14rem;
-  box-shadow: 10px 10px 10px rgba(51, 51, 51, 0.301);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.301);
   position: relative;
   top: 3rem;
   left: 6rem;
@@ -121,7 +153,7 @@ $background-img: url("./assets/Dev-background.png");
 .image-project3 {
   width: 18rem;
   height: 24rem;
-  box-shadow: 10px 10px 10px rgba(51, 51, 51, 0.301);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.301);
   position: relative;
   top: -5rem;
   right: 9rem;
@@ -148,7 +180,7 @@ $background-img: url("./assets/Dev-background.png");
   animation: quote 3s infinite;
   animation-direction: alternate;
 }
-.link-tab{
+.link-tab {
   color: $link-font-color;
   text-decoration: none;
   font-family: $body-font;
@@ -160,10 +192,17 @@ $background-img: url("./assets/Dev-background.png");
 .link-tab:hover {
   color: $spec-font-color;
 }
+.hero-flick {
+  color: $span-font-color;
+  font-family: $body-font;
+  animation: flick 2s infinite;
+}
 
+.about-animate {
+    animation: slideUpP1 2s ease-in-out;
+}
 
-
-@media (max-width: 547px){
+@media (max-width: 547px) {
   .image-project1 {
     width: 18rem;
     height: 10rem;
@@ -185,16 +224,16 @@ $background-img: url("./assets/Dev-background.png");
     top: 2rem;
     right: 0;
   }
-  .link-tab{
+  .link-tab {
     margin-top: -1.5rem;
   }
-  .about .fs-4{
-    font-size: 1.5rem!important;
+  .about .fs-4 {
+    font-size: 1.5rem !important;
     padding: 5rem 5rem 0rem 5rem;
     text-align: center;
   }
-  .about .fs-2{
-    font-size: 2rem!important;
+  .about .fs-2 {
+    font-size: 2rem !important;
     padding-top: 1rem;
   }
 }

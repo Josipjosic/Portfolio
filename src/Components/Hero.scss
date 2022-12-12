@@ -3,7 +3,7 @@
 
 $body-font: "Italiana", sans-serif;
 $spec-font: "Italianno", sans-serif;
-$body-font-color: #7c7979;
+$body-font-color: #bbbbbb;
 $spec-font-color: #ffffff;
 $span-font-color: #c10232;
 $link-font-color: #edab0d;
@@ -80,9 +80,9 @@ $background-img: url("./assets/Design-background.png");
 
 
 .hero {
-  background-image: $background-img;
   color:$spec-font-color;
   font-family: $body-font;
+  background-size: cover;
 
   .col-md p{
     color: $body-font-color;
@@ -143,7 +143,6 @@ $background-img: url("./assets/Design-background.png");
     animation: fade 3s linear;
     line-height: 66%;
     transform: rotate(-25deg);
-
   }
 }
 
@@ -169,5 +168,8 @@ $background-img: url("./assets/Design-background.png");
     margin-top: 2rem;
     justify-content: center;
   }
-
+  .hero .fs-1{
+    font-size: 10rem!important;
+    margin-bottom: 3rem;
+  }
 }

@@ -1,4 +1,19 @@
+/* width */
+::-webkit-scrollbar {
+    display: none;
+}
 body {
 background-color: #212121;
 cursor: default;
+}
+.hero-vid {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -3;
+    filter: grayscale(80%);
+    filter: contrast(1.1);
 }

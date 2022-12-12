@@ -13,13 +13,20 @@ import mobx from "./assets/mobx.png";
 import sass from "./assets/sass.png";
 import mysql from "./assets/mySQL.png";
 import wordpress from "./assets/wordpress.png";
+import { useInView } from 'react-intersection-observer';
+
 
 function TreeSkill() {
+
+  const { ref: myRef, inView: myElementIsVisible } = useInView({triggerOnce: true});
+
+
+
   return (
-    <section className="tree" id="skills">
+    <section className="tree" id="skills"  ref={myRef}>
       <div className="container">
         <div className="text-center">
-          <h3 className="fs-2">Tree of details</h3>
+          <h3 className={`${"fs-2"} ${myElementIsVisible ? "about-animate" : ""}`}>Details</h3>
           <br></br>
           <p className="fs-4 my-sm-3">
             more about tools, technologies and social media I’m currently using
@@ -27,7 +34,7 @@ function TreeSkill() {
         </div>
         <div className="row text-center">
           <div className="col my-lg-5">
-            <h4 className="fs-2 py-3 my-3 card-title">Technologies</h4>
+            <h4 className="fs-3 py-3 my-3">Technologies</h4>
             <div className="p-5 img-cont">
               <img src={react} alt="react-icon" className="img1"></img>
               <img src={figma} alt="figma-icon" className="img2"></img>
@@ -42,7 +49,7 @@ function TreeSkill() {
             </div>
           </div>
           <div className="col my-lg-5">
-            <h4 className="fs-2 py-3 my-3  card-title ">Contact</h4>
+            <h4 className="fs-3 py-3 my-3">Contact</h4>
             <div className="p-5 img-cont">
               <a
                 href="https://www.facebook.com/josic12"
