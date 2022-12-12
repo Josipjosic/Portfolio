@@ -202,6 +202,20 @@ $background-img: url("./assets/Dev-background.png");
     animation: slideUpP1 2s ease-in-out;
 }
 
+@media (max-width: 1200px) {
+  .image-project2 {
+    left: -2rem;
+  }
+}
+
+
+@media (max-width: 991px) {
+  .image-project2 {
+    left: 2rem;
+  }
+}
+
+
 @media (max-width: 547px) {
   .image-project1 {
     width: 18rem;
