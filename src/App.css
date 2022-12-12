@@ -15,5 +15,6 @@ cursor: default;
     left: 0;
     z-index: -3;
     filter: grayscale(80%);
-    filter: contrast(1.1);
+    filter: contrast(1.2);
+    height: 100%;
 }
