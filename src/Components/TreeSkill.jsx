@@ -2,7 +2,6 @@ import React from "react";
 import "./TreeSkill.scss";
 import react from "./assets/atom.png";
 import figma from "./assets/figma.png";
-import facebook from "./assets/facebook.png";
 import firebase from "./assets/Firebase.png";
 import git from "./assets/git.png";
 import github from "./assets/github.png";
@@ -70,15 +69,6 @@ function TreeSkill() {
           <div className="col my-lg-5">
             <h4 className="fs-3 py-3 my-3">Contact</h4>
             <div className="p-5 img-cont">
-              <div className="cont-div">
-                <a
-                  href="https://www.facebook.com/josic12"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img src={facebook} alt="react-icon" className="img11"></img>
-                Facebook</a>
-              </div>
               <div className="cont-div">
                 <a
                   href="https://www.linkedin.com/in/josip-josic-949198213/"

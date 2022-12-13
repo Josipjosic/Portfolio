@@ -19,7 +19,7 @@ $background-img: url("./assets/Dev-background.png");
 
 @keyframes quote {
   from {
-    color: #7c7979;
+    color: #bbbbbb;
     font-size: 24px;
   }
   to {
@@ -29,7 +29,7 @@ $background-img: url("./assets/Dev-background.png");
 }
 @keyframes mode {
   from {
-    color: #7c7979;
+    color: #bbbbbb;
   }
   to {
     color: white;
@@ -97,7 +97,7 @@ $background-img: url("./assets/Dev-background.png");
     text-decoration: none;
   }
   .about-link:hover {
-    color: $spec-font-color;
+    color: $span-font-color;
   }
   @keyframes flick {
     0% {

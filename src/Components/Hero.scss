@@ -6,7 +6,7 @@ $spec-font: "Italianno", sans-serif;
 $body-font-color: #bbbbbb;
 $spec-font-color: #ffffff;
 $span-font-color: #c10232;
-$link-font-color: #edab0d;
+$link-font-color: #ffb300;
 $background-img: url("./assets/Design-background.png");
 
 
@@ -78,6 +78,15 @@ $background-img: url("./assets/Design-background.png");
   }
 }
 
+@keyframes mode {
+  from {
+    color: #bbbbbb;
+  }
+  to {
+    color: white;
+  }
+}
+
 
 .hero {
   color:$spec-font-color;
@@ -90,6 +99,7 @@ $background-img: url("./assets/Design-background.png");
   .hero-flick{
     color: $span-font-color;
     animation: flick 1s infinite;
+    font-weight: bolder;
   }
   .link {
     display: flex;
@@ -97,6 +107,7 @@ $background-img: url("./assets/Design-background.png");
     color: $link-font-color;
     text-decoration: none;
     margin-top: 10rem;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
   }
   .link:Hover {
     animation: link 0.3s linear;
@@ -107,9 +118,20 @@ $background-img: url("./assets/Design-background.png");
     font-family: $spec-font;
   }
 
+  .title-and {
+    font-family: $spec-font;
+    font-size: 3.5rem;
+    color: $span-font-color;
+    font-weight: bolder;
+    padding: 0;
+    margin: 0;
+  }
+
 
   .p1 {
     animation: slideinP1 1s linear;
+    color: $span-font-color!important;
+    font-weight: bolder;
   }
   .p2 {
     animation: slideinP2 2s linear;

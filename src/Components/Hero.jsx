@@ -13,16 +13,16 @@ function Hero() {
           <div className="col-lg text-center text-lg-end py-md-5 px-md-5">
             <p className="fs-4 p1">Introduction</p>
             <h2 className="fs-2">
-              Front-end web developer and digital designer
+              Front-End web developer <span className="title-and">&</span> digital designer
               <span className="hero-flick">.</span>
             </h2>
             <p className="fs-4 p2">
               Welcome to my portfolio page. Here you can learn more about me and
-              my projects throught my journey to become a front-end web
+              my projects throught my journey to become a Front-End web
               developer.
             </p>
             <a href={myPDF} download="CV_File.pdf" className="link fs-5">
-              Download resume <DownloadIcon viewBox="12 -10 5 25" />
+              Curriculum Vitae <DownloadIcon viewBox="12 -10 5 25" />
             </a>
           </div>
           <div className="col-md text-center py-md-5 ">
