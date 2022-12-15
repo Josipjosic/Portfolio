@@ -66,7 +66,7 @@ function About() {
           <h3 className={`${"fs-2 text-center"} ${myElementIsVisible ? "about-animate" : ""}`}>About me</h3>
           <p className="fs-4 text-lg-center ">
             Hello again<span className="hero-flick">!</span> Thank you for visiting my page and I hope you enjoy it.
-            As already told, I’m a frontend web developer and digital designer.
+            As already told, I’m a Front-End web developer and digital designer.
             I’m from Nasice and I’m 24. If you want to get in contact with me,
             please use some of my social media (
             <a

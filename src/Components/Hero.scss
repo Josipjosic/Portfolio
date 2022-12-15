@@ -116,6 +116,7 @@ $background-img: url("./assets/Design-background.png");
 
   .title {
     font-family: $spec-font;
+    text-shadow: 2px 2px 1px rgba(255, 255, 255, 0.219);
   }
 
   .title-and {
@@ -132,6 +133,7 @@ $background-img: url("./assets/Design-background.png");
     animation: slideinP1 1s linear;
     color: $span-font-color!important;
     font-weight: bolder;
+    text-shadow: 1px 1px 1px rgba(85, 85, 85, 0.219);
   }
   .p2 {
     animation: slideinP2 2s linear;

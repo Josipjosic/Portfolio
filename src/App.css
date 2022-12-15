@@ -15,7 +15,7 @@ cursor: default;
     top: 0;
     left: 0;
     z-index: -3;
-    filter: grayscale(100%);
-    backdrop-filter: blur(2px);
+    filter: grayscale(100%) blur(4px);
     height: 100%;
+    transform: scale(1.03);
 }
