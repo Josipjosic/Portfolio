@@ -2,9 +2,9 @@ import React from "react";
 import { useInView } from 'react-intersection-observer';
 import "./About.scss";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import project1 from "./assets/Gallery.png";
-import project2 from "./assets/MovieApp.png";
-import project3 from "./assets/TopPop.png";
+import project1 from "./assets/Gallery1.png";
+import project2 from "./assets/MovieApp1.png";
+import project3 from "./assets/TopPop1.png";
 
 function About() {
 

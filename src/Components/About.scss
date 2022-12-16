@@ -6,7 +6,6 @@ $body-font-color: #bbbbbb;
 $spec-font-color: #ffffff;
 $span-font-color: #c10232;
 $link-font-color: #edab0d;
-$background-img: url("./assets/Dev-background.png");
 
 @keyframes link {
   from {
@@ -135,24 +134,18 @@ $background-img: url("./assets/Dev-background.png");
 }
 
 .image-project1 {
-  width: 22rem;
-  height: 14rem;
   box-shadow: 10px 10px 10px rgba(148, 146, 146, 0.151);
   position: relative;
   top: 6rem;
   right: 7rem;
 }
 .image-project2 {
-  width: 22rem;
-  height: 14rem;
   box-shadow: 10px 10px 10px rgba(148, 146, 146, 0.151);
   position: relative;
   top: 3rem;
   left: 6rem;
 }
 .image-project3 {
-  width: 18rem;
-  height: 24rem;
   box-shadow: 5px 5px 25px rgba(148, 146, 146, 0.151);
   position: relative;
   top: -5rem;
